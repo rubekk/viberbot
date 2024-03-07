@@ -22,7 +22,7 @@ const https = require('https');
 const port = process.env.PORT || 8080;
 
 // Viber will push messages sent to this URL. Web server should be internet-facing.
-const webhookUrl = process.env.WEBHOOK_URL;
+// const webhookUrl = process.env.WEBHOOK_URL;
 
 // const httpsOptions = {
 // 	key: ...,
@@ -30,4 +30,4 @@ const webhookUrl = process.env.WEBHOOK_URL;
 // 	ca: ...
 // }; // Trusted SSL certification (not self-signed).
 
-https.createServer(bot.middleware()).listen(port, () => bot.setWebhook(webhookUrl));
+// https.createServer(bot.middleware()).listen(port, () => bot.setWebhook(webhookUrl));
